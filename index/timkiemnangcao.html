@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Tìm kiếm nâng cao</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="../detail.css">
+    <link rel="stylesheet" href="../index/styleTLWeb1.css">
+    <link rel="stylesheet" href="../carousel.css">
+    <script src="../index/function.js"></script>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body onload="changAccountName()">
+    <header>
+        <div class="box-header">
+            <div class="LogoChinh">
+                <img src="../index/Logochinh.png" alt="Logo trang web">
+            </div>
+            <div class="menu-top">
+                <div class="logohotline">
+                    <img src="../index/logohotline.jpg" alt="Logo hotline">
+
+                </div>
+                <div class="PhoneNum">
+                    <span> HOTLINE:  </span>
+                    <b></b>
+                    <p style="color: orangered;"><b> 0931335214 | 0963261328 | 0364655945</b> </p>
+
+            </div>
+                <div class="search1">
+                    <form  class="searchBar" method="get" role="search" action="../index/danhmuctimkiem.html">
+                        <input type="text" id="tim kiem" required
+                            class="input-group-field auto-search search-auto form-control" placeholder="Tìm sản phẩm..."
+                            style="border-width: 1px; border-color:rgb(16, 122, 131);  ">
+                        <button type="submit" aria-label="Tìm kiếm" title="Tìm kiếm">
+                            <svg width="20" height="17" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.1404 13.4673L19.852 19.1789C20.3008 19.6276 19.6276 20.3008 19.1789 19.852L13.4673 14.1404C12.0381 15.4114 10.1552 16.1835 8.09176 16.1835C3.6225 16.1835 0 12.5613 0 8.09176C0 3.6225 3.62219 0 8.09176 0C12.561 0 16.1835 3.62219 16.1835 8.09176C16.1835 10.1551 15.4115 12.038 14.1404 13.4673ZM0.951972 8.09176C0.951972 12.0356 4.14824 15.2316 8.09176 15.2316C12.0356 15.2316 15.2316 12.0353 15.2316 8.09176C15.2316 4.14797 12.0353 0.951972 8.09176 0.951972C4.14797 0.951972 0.951972 4.14824 0.951972 8.09176Z"
+                                    fill="#e95211"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="logodangnhap1">
+               <a href="../index/dangnhap.html" target="_blank">
+                <img src="../index/logodangnhap.png" alt="Logo đăng nhập"><br>
+            <span id="taikhoan">TÀI KHOẢN</span>  
+            </a>
+            </div>
+            <div class="logogiohang">
+                <a href="../index/giohang.html" target="_blank">
+                    <img src="../index/logogiohang.png" alt="logo giỏ hàng"><br>
+                    <span>GIỎ HÀNG</span>  
+                </a>
+            </div>
+        </div>
+
+</header>
+   
+<ul class = "main-menu">
+    <li class = "main-men"><a href="../index../index.html">Trang chủ</a></li>
+    <li class="dropdown"><div class = "main-menu"><a class="dropbtn">Sản phẩm</a></div>
+        
+        <div class="dropdown-content">
+            <ul >
+                <li class="sub-dropdown">
+                    <a href="../votcaulong/votcaulong1.html" target="_blank">Vợt cầu lông</a>
+                    <div class="sub-dropdown-content">
+                    </div>
+                </li>
+                <li><a href="../giaycaulong/giaycaulong1.html" target="_blank">Giày cầu lông</a>
+                    <div class="sub-dropdown-content">
+                    </div>
+                </li>
+                <li><a href="../quanaocaulong/quanaocaulong1.html"target="_blank">Quần áo cầu lông</a>
+                    <div class="sub-dropdown-content">
+                    </div>
+                </li>
+                <li><a href="../balocaulong/balocaulong1.html"target="_blank">Balo, túi cầu lông</a>
+                    <div class="sub-dropdown-content">
+                    </div>
+                </li>
+                <li><a href="../phukiencaulong/phukiencaulong1.html"target="_blank">Phụ kiện cầu lông</a>
+                    <div class="sub-dropdown-content">
+                    </div>
+                </li>
+            </ul>
+    <li ><a href="../tintuc/tintuc.html">Tin tức</a></li>
+    <li class="dropdown"><div class = "main-menu"><a class="dropbtn">Hướng dẫn</a></div>
+        
+        <div class="dropdown-content">
+            <ul >
+                <li class="sub-dropdown">
+                    <a href="../huongdan/huongdanchonvot.html" target="_blank">Hướng dẫn chọn vợt</a>
+                    <div class="sub-dropdown-content">
+                    </div>
+                </li>
+                <li><a href="../huongdan/huongdanthanhtoan.html" target="_blank">Hướng dẫn thanh toán</a>
+                    <div class="sub-dropdown-content">
+                    </div>
+                </li>
+            </ul>
+    
+            <li><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
+            <li ><a href="../lienhe/lienhe.html">Liên hệ</a></li>
+</ul><div class="khungtimkiem">
+    <form action="#" method="GET" id="advanced-search-form">
+        <label for="search">Chọn loại sản phẩm</label>
+        <select id="chonsanpham" name="phanloai"> 
+            <option value="allin">[None]</option>
+            <option value="votcaulong">Tất cả</option>
+            <option value="votcaulong">Vợt cầu lông</option>
+            <option value="giaycaulong">Giày cầu lông</option>
+            <option value="balocaulong">Balo, túi cầu lông</option>
+            <option value="balocaulong">Phụ kiện cầu lông</option>
+            <option value="balocaulong">Quần áo cầu lông</option>
+
+        </select>
+
+
+        <label for="brand">Thương hiệu</label>
+        <select name="thuonghieu" id="chonthuonghieu">
+            <option value="yonex">[None]</option>
+            <option value="yonex">Yonex</option>
+            <option value="yonex">Lining</option>
+            <option value="yonex">Sunbata</option>
+            <option value="yonex">Kumpoo</option>
+            <option value="yonex">Kawasaki</option>
+            <option value="yonex">Victor</option>
+
+        </select>
+
+        <div class="price-range-container"> <div> <label for="price"><b style="font-size: large;">Mức giá</b> </label></div>
+           
+            <input type="range" id="price" name="price" min="0" max="100000000" step="100000" value="5000000" oninput="updatePriceValue(this.value)">
+            <span id="price-display">0 <b>đ</b></span>
+        </div>
+
+        <label for="price-range">Phong cách chơi</label>
+        <select id="price-range" name="price-range">
+            <option value="allin">[None]</option>
+            <option value="attack">Đa dụng</option>
+            <option value="attack">Tấn công</option>
+            <option value="medium">Công thủ toàn diện</option>
+            <option value="protected">Phản tạt, phòng thủ</option>
+        </select>
+        <label for="location">Chi nhánh</label>
+        <select name="chinhanh" id="local">
+            <option value="allin">[None]</option>
+
+        <option value="TQDA">TQDA PREMIUM Quận 1</option>
+        <option value="TQDA">TQDA Quận 2 </option>
+        <option value="TQDA">TQDA Quận 3</option>
+        <option value="TQDA">TQDA Quận 4 </option>
+        <option value="TQDA">TQDA Quận 5 </option>
+        <option value="TQDA">TQDA Quận 6 </option>
+        <option value="TQDA">TQDA Quận 7 </option>
+        <option value="TQDA">TQDA Quận 8 </option>
+        <option value="TQDA">TQDA Quận 9 </option>
+        <option value="TQDA">TQDA Quận 10 </option>
+        <option value="TQDA">TQDA Quận 11 </option>
+        <option value="TQDA">TQDA Quận 12</option>
+        <option value="TQDA">TQDA Quận Bình Tân </option>
+        <option value="TQDA">TQDA Quận Phú Nhuận</option>
+        <option value="TQDA">TQDA Quận Gò Vấp </option>
+        <option value="TQDA">TQDA Quận Tân Bình</option>
+        
+
+    </select>
+     <button class="custom-button" type="button" onclick="window.location.href='../index/danhmuctimkiem.html'" >Tìm</button>
+    </form>
+</div>
+    <script>function updatePriceValue(value) {
+        document.getElementById('price-display').textContent = formatCurrency(value);
+    }
+    
+    function formatCurrency(amount) {
+        // Sử dụng biểu thức chính quy để chèn dấu phẩy vào giữa mỗi ba chữ số
+        return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '₫' ;
+    }
+    
+    </script>
+    <div class="khungden">
+        <div class="cot">THÔNG TIN CHUNG<br>
+            
+            Tầm nhìn: "Trở thành nhà phân phối và sản xuất<br> thể thao lớn nhất Việt Nam"</div>
+        <div class="cot">THÔNG TIN LIÊN HỆ<br>
+            Hệ thống cửa hàng: Cửa hàng độc quyền trên toàn  <br>quốc<br>
+
+            Hotline: 0931335214 | 0963261328 | 0364655945<br>
+            Email: TQDA@gmail.com<br>
+            Hợp tác kinh doanh: 0931335214 (Mr. Quân)<br>
+            Nhượng quyền thương hiệu: 0963261328 (Mr. Nan)<br>
+            Than phiền dịch vụ: 0364655945 (Mr. Đức Anh)</div>
+        <div class="cot">CHÍNH SÁCH<br>
+            Chính sách bảo hành<br>
+            Chính sách xử lý khiếu nại<br>
+            Chính sách vận chuyển<br>
+            Điều khoản sử dụng<br>
+            Chính Sách Bảo Mật Thông Tin<br></div>
+        <div class="cot">HƯỚNG DẪN<br>
+           
+            Bảng size Lining - Cách chọn size quần áo<br> lining, giày cầu lông Lining<br>
+            Hướng dẫn thanh toán<br>
+            Kiểm tra bảo hành<br>
+            Kiểm tra đơn hàng<br>
+            </div>
+    </div>
+    <div class="khungcam">
+        <div class="cot">
+            © CÔNG TY TNHH TQDA SPORTS<br>
+            GPKD số 68686868 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 20/10/2023<br>
+            GĐ/Sở hữu by TQDA<bsite:br>
+        </div>
+    </div>
+    <div><button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="../index/ontop.png" alt=""></button>
+        <script>
+           
+            let mybutton = document.getElementById("myBtn");
+            
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+         
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script></div>
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Vợt Cầu Lông Yonex Astrox 100ZZ China Limited (Nội Địa Trung)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="../index/styleTLWeb1.css">
+    <link rel="stylesheet" href="../product2.css">
+    <script src="../index/function.js"></script>
+    <script>
+        function addToCart() {
+            var selectedSize = document.querySelector('input[name="size"]:checked');
+    
+            if (selectedSize) {
+                var sizeValue = selectedSize.value;
+    
+                if (sizeValue === '37') {
+                    alert('Đã thêm vào giỏ hàng');
+                } else {
+                    alert('Mặt hàng đã hết, vui lòng chọn lại');
+                    // Reset radio button selection
+                    var sizeRadios = document.querySelectorAll('input[name="size"]');
+                    sizeRadios.forEach(function (radio) {
+                        radio.checked = false;
+                    });
+                }
+            } else {
+                alert('Vui lòng chọn size');
+            }
+        }
+    </script>
+</head>
+
+<body onload="changAccountName()">
+    <header>
+        <div class="box-header">
+            <div class="LogoChinh">
+                <img src="../index/Logochinh.png" alt="Logo trang web">
+            </div>
+            <div class="menu-top">
+                <div class="logohotline">
+                    <img src="../index/logohotline.jpg" alt="Logo hotline">
+
+                </div>
+                <div class="PhoneNum">
+                    <span> HOTLINE:</span>
+                    <b></b>
+                    <p style="color: orangered;"><a> 0931335214 | 0963261328 | 0364655945</a> </p>
+
+                </div>
+                <div class="search1">
+                    <form class="searchBar" method="get" role="search"action="/index/danhmuctimkiem.html">
+                        <input type="text" id="tim kiem" required
+                            class="input-group-field auto-search search-auto form-control" placeholder="Tìm sản phẩm..."
+                            style="border-width: 1px; border-color:rgb(16, 122, 131);  ">
+                        <button type="submit" aria-label="Tìm kiếm" title="Tìm kiếm">
+                            <svg width="20" height="17" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.1404 13.4673L19.852 19.1789C20.3008 19.6276 19.6276 20.3008 19.1789 19.852L13.4673 14.1404C12.0381 15.4114 10.1552 16.1835 8.09176 16.1835C3.6225 16.1835 0 12.5613 0 8.09176C0 3.6225 3.62219 0 8.09176 0C12.561 0 16.1835 3.62219 16.1835 8.09176C16.1835 10.1551 15.4115 12.038 14.1404 13.4673ZM0.951972 8.09176C0.951972 12.0356 4.14824 15.2316 8.09176 15.2316C12.0356 15.2316 15.2316 12.0353 15.2316 8.09176C15.2316 4.14797 12.0353 0.951972 8.09176 0.951972C4.14797 0.951972 0.951972 4.14824 0.951972 8.09176Z"
+                                    fill="#e95211"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="logodangnhap1">
+                <a href="../index/dangnhap.html" target="_blank">
+                    <img src="../index/logodangnhap.png" alt="Logo đăng nhập"><br>
+    <span id="taikhoan"> TÀI KHOẢN</span>              
+                </a>
+            </div>
+            <div class="logogiohang">
+                <a href="../index/giohang.html" target="_blank">
+                    <img src="../index/logogiohang.png" alt="logo giỏ hàng"><br>
+    <span>GIỎ HÀNG</span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <ul class = "main-menu">
+        <li class = "main-men"><a href="../index/index.html">Trang chủ</a></li>
+        <li class="dropdown"><div class = "main-menu"><a class="dropbtn">Sản phẩm</a></div>
+            <div class="dropdown-content">
+                <ul >
+                    <li class="sub-dropdown">
+                        <a href="../votcaulong/votcaulong1.html " target="_blank">Vợt cầu lông</a>
+                        <div class="sub-dropdown-content">
+                        </div>
+                    </li>
+                    <li><a href="../giaycaulong/giaycaulong1.html" target="_blank">Giày cầu lông</a>
+                        <div class="sub-dropdown-content">
+                        </div>
+                    </li>
+                    <li><a href="../quanaocaulong/quanaocaulong1.html"target="_blank">Quần áo cầu lông</a>
+                        <div class="sub-dropdown-content">
+                        </div>
+                    </li>
+                    <li><a href="../balocaulong/balocaulong1.html"target="_blank">Balo, túi cầu lông</a>
+                        <div class="sub-dropdown-content">
+                        </div>
+                    </li>
+                    <li><a href="../phukiencaulong/phukiencaulong1.html"target="_blank">Phụ kiện cầu lông</a>
+                        <div class="sub-dropdown-content">
+                        </div>
+                    </li>
+                </ul>
+        <li ><a href="../tintuc/tintuc.html">Tin tức</a></li>
+        <li class="dropdown"><div class = "main-menu"><a class="dropbtn">Hướng dẫn</a></div>
+            
+            <div class="dropdown-content">
+                <ul >
+                    <li class="sub-dropdown">
+                        <a href="../huongdan/huongdanchonvot.html" target="_blank">Hướng dẫn chọn vợt</a>
+                        <div class="sub-dropdown-content">
+                        </div>
+                    </li>
+                    <li><a href="../huongdan/huongdanthanhtoan.html" target="_blank">Hướng dẫn thanh toán</a>
+                        <div class="sub-dropdown-content">
+                        </div>
+                    </li>
+                </ul>
+        <li><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
+        <li ><a href="../lienhe/lienhe.html">Liên hệ</a></li>
+    </ul>
+    <div>
+        <div class="bodywrap">	
+			<section class="bread-crumb">
+	<div class="container">
+<section class="layout-product product" >
+	  </div>
+		<div class="container">	
+		<div class="details-product">
+			<div class="row1">
+				<div class="col-lg-9 col-col-md-9 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="product-detail-left product-images col-12 col-md-6 col-lg-5">
+							<div class="product-image-block relative">
+																<div class="swiper-container gallery-top swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+								</div>
+								<div class="swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-free-mode swiper-container-thumbs">
+									<div class="swiper-wrapper">
+                                                    <div class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-thumb-active" data-hash="0" style="width: 60px; margin-right: 5px;">
+											<div class="p-100">
+												<img height="400" width="400" src="100zz01.png"class="swiper-lazy swiper-lazy-loaded">
+											</div>	
+										</div>
+													<div class="swiper-slide swiper-slide-visible swiper-slide-next" data-hash="1" style="width: 60px; margin-right: 5px;">
+											<div class="p-100">
+												<img height="400" width="400" src="100zz0.png"class="swiper-lazy swiper-lazy-loaded">
+											</div>	
+										</div>
+													<div class="swiper-slide swiper-slide-visible" style="width: 60px; margin-right: 5px;">
+										</div>
+                                                    <div class="swiper-slide swiper-slide-visible" style="width: 60px; margin-right: 5px;">
+
+										</div>
+													<div class="swiper-slide" data-hash="5"style="width: 60px; margin-right: 5px;">
+										</div>
+									</div>
+									<div class="swiper-button-next">
+									</div>
+									<div class="swiper-button-prev swiper-button-disabled">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="details-pro col-12 col-md-6 col-lg-7">
+							<h1 class="title-product"> Vợt Cầu Lông Yonex Astrox 100ZZ China Limited (Nội Địa Trung)</h1>
+							<div class="product-top clearfix">
+								<div class="sku-product clearfix">
+																		<span class="variant-sku"  content="TQDA017091">Mã: <span class="a-sku">TQDA290404</span></span>
+								</div>
+							</div>
+							<div class="inventory_quantity">
+									<span class="mb-break">
+									<span class="stock-brand-title">Thương hiệu:</span>
+									<a class="a-vendor" >
+
+                                        <a class="a-vendor" ><strong><a>Yonex</a></strong>
+									</a>
+								</span>
+								<span class="line">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+																<span class="mb-break">
+									<span class="stock-brand-title">Tình trạng:</span>
+																		<span class="a-stock">Còn hàng</span>
+								</span>
+							</div>
+							<form enctype="multipart/form-data" data-cart-form="" id="add-to-cart-form" action="javascript:;" method="post" class="form-inline">
+								<div class="price-box clearfix">
+
+									<input type="hidden" name="sp_id" value="17091">
+									<style>
+										@keyframes highlight {
+											0% { background-color: #FFFFFF; }
+											70% { background-color: #fffb00; }
+											120% { background-color: #FFFFFF; }
+										}
+										
+										.product-price {
+											animation: highlight 1s infinite;
+										}
+									</style>
+									<span class="special-price">
+										
+										<span class="price product-price"><b style = "font-size: x-large;">9.700.000 ₫</b> </span>
+									</span>
+									<span class="old-price">Giá niêm yết: <del class="price product-price-old">10.500.000 ₫</del></span>
+								</div>			
+																<fieldset class="pro-discount uu_dai">
+									<legend>
+										<img width="32" height="32" alt="Khuyến mãi" src="../index/khuyenmai.gif"> ƯU ĐÃI
+									</legend>
+									<div class="product-promotions-list-content">
+									<p>✔  Tặng 2 Quấn cán vợt Cầu Lông: <a href="../quancanvot.html">Felet Over</a>, VS002 hoặc Joto 001
+
+                                    </p>
+                                    <p>✔ Sản phẩm cam kết chính hãng</p>
+
+<p>✔ Tặng bao đơn hoặc bao nhung bảo vệ vợt</p>
+
+<p>✔ Thanh toán sau khi kiểm tra và nhận hàng (Giao khung vợt)</p>
+
+<p>✔ Bảo hành chính hãng theo nhà sản xuất (Trừ hàng nội địa, xách tay)</p>
+
+<p><span style="font-family:verdana,geneva,sans-serif"><strong>🎁Ưu đãi thêm khi mua sản phẩm tại <a>TQDA Premium</a></strong></span></p>
+
+<p><span style="font-family:verdana,geneva,sans-serif">✅ <a>Sơn logo mặt vợt</a> miễn phí</span></p>
+
+<p><span style="font-family:verdana,geneva,sans-serif">✅ <a >Bảo hành lưới đan</a> trong 72 giờ</span></p>
+
+<p><span style="font-family:verdana,geneva,sans-serif">✅&nbsp;<a >Thay gen vợt</a> miễn phí trọn đời</span></p>
+
+<p><span style="font-family:verdana,geneva,sans-serif">✅ <a>Tích luỹ điểm thành viên</a> Premium</span></p>
+
+<p><span style="font-family:verdana,geneva,sans-serif">✅ <a>Voucher giảm giá</a> cho lần mua hàng tiếp theo</span></p>										</div>
+</fieldset>
+
+                                    <div class="form-product">
+                                        <div class="select-swatch">
+                                            <div class="swatch clearfix" data-option-index="0">
+                                                <div class="header">Chọn size:</div>
+                                    
+                                                <div class="swatch-element soldout size-36" data-value="36">
+                                                    <input type="radio" name="size" value="36">
+                                                    <label for="Size 36"><del>2U</del></label>
+                                                </div>
+                                                <div class="swatch-element size-37" data-value="37">
+                                                    <input type="radio" name="size" value="37">
+                                                    <label for="Size 37">3U<label></label></label>
+                                                </div>
+                                                <div class="swatch-element size-37" data-value="37">
+                                                    <input type="radio" name="size" value="37">
+                                                    <label for="Size 37">4U</label>
+                                                </div>
+                                                <div class="swatch-element size-36" data-value="36">
+                                                    <input type="radio" name="size" value="36">
+                                                    <label for="Size 36"><del>5U</del></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="boz-form">
+                                        <div class="clearfix form-group">
+                                            <div class="flex-quantity">
+                                                <div class="btn-mua button_actions clearfix">
+                                                    <button type="button" class="btn_base normal_button" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                              
+								</div>
+							<div class="clearfix"></div>
+							<div class="d-md-none d-lg-none">
+<fieldset class="pro-discount cn_con_hang" >
+	<legend>
+		Đang có hàng tại
+	</legend>
+</fieldset>
+							</div>
+						</div>
+					</div>
+<div class="product-tab e-tabs not-dqtab">
+	<ul class="tabs tabs-title clearfix">
+		<li class="tab-link active" data-tab="#tab_gioi_thieu">
+			<h3>Mô tả sản phẩm</h3>
+		</li>
+	</ul>
+    <div class="row ababa">
+        <div class="col-md-12">
+            <h2 style="text-align:justify"><span style="font-size:20px;"><span ><strong>1. Giới thiệu vợt cầu lông&nbsp;Yonex Astrox 100ZZ China Limited (Nội Địa Trung)</strong></span></span></h2>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a>Vợt cầu lông Yonex Astrox 100ZZ China Limited (Nội Địa Trung)</a> là phiên bản giới hạn được mong chờ nhất năm 2023 với màu sắc hoàn toàn mới, đem lại những trải nghiệm tuyệt vời cho người chơi, được nhiều VĐV trên thế giới hàng đầu tin dùng và đạt được nhiều thành công lớn, tiêu biểu là tay vợt nam nổi tiếng Axelsen.</span></span></p>
+
+<p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="600" src="../votcaulong/video100zz.mp4" width="900"></iframe></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Theo đánh giá&nbsp;mới nhất về các cây vợt Astrox trong Astrox Series,&nbsp;Astrox 100 ZX và&nbsp;Astrox 100 ZZ có điểm cân bằng là nặng đầu nhất và cứng nhất, gần như những gì tốt nhất đang được tập trung trên 2 siêu phẩm này.</span></span></p>
+
+<p style="text-align:center"><img src="100zz0.png" style="height:795px; width:700px"></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Vẫn là những hoạ tiết quen thuộc trên các phiên bản cũ, tuy nhiên ở phiên bản&nbsp;Yonex Astrox 100ZZ China Limited lần này, hãng Yonex đã khéo léo lựa chọn tông màu chủ đạo đen nâu trầm&nbsp;tối để làm nổi bật lên các hoạ tiết trông vô cùng&nbsp;bắt mắt, tạo nên sự huyền bí, mạnh mẽ đầy cuốn hút của cây vợt ngay từ cái nhìn đầu tiên.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Thiết kế cắt gió, giảm thiểu tối đa lực cản không khí giúp những truyền lực vào quả cầu nhanh và mạnh hơn. Ngoài ra, mặt vợt rộng ISOMETRIC&nbsp;còn giúp gia tăng&nbsp;hiệu suất đánh cầu chính xác, tiếng nổ khi đánh cầu cũng trở nên bắt tai hơn, tạo hiệu ứng sức mạnh giúp người chơi có thêm cảm hứng khi đánh.</span></span></p>
+
+<p style="text-align:center"><img src="100zz2.webp" style="height:599px; width:900px"></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Khớp nối T Joint trên vợt cầu lông Yonex Astrox 100ZZ China Limited (Nội Địa Trung) đem lại khả năng&nbsp;chống xoắn hiệu quả, phục hồi nhanh chóng khi thực hiện những pha đánh cầu khó. Đặc biệt, đũa vợt siêu cứng cho khả năng điều cầu với độ chính xác gần như tuyệt đối, phụ thuộc hoàn toàn vào lực tay của người chơi.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Chất liệu Namd giúp tăng khả năng đàn hồi cũng như mang đến trọng lượng nhẹ tối ưu cho cây vợt.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Hàng loạt công nghệ tiên tiến hiện đại&nbsp;nhất được tích hợp trên đứa "con cưng" của hãng để tối ưu cho các VĐV thi đấu. Nhìn chung, nếu bạn là người thi đấu chuyên nghiệp, muốn nâng cao kĩ năng tối đa của mình và yêu thích các cây&nbsp;<a href="/vot-cau-long-yonex.html">vợt cầu lông Yonex</a> phiên bản giới hạn đặc biệt&nbsp;thì&nbsp;Yonex Astrox 100ZZ China Limited (Nội Địa Trung) chính là lựa chọn không thể tuyệt với hơn trong năm 2023.</span></span></p>
+
+<p style="text-align:center"><img src="100zz3.webp" style="height:600px; width:450px">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<img src="100zz1.webp" style="height:600px; width:450px"></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>2. Thông số vợt cầu lông&nbsp;Yonex Astrox 100ZZ China Limited (Nội Địa Trung)</strong></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Thương hiệu: Yonex</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Màu sắc: Đen - Nâu Đỏ</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Độ cứng: Siêu cứng&nbsp;(Extra&nbsp;Stiff)</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Khung vợt: HM Graphite / Namd / Tungsten / Black Micro Core / Nanometric</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Thân vợt : HM Graphite / Ultra PE FIBER</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Khớp nối T Joint</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Chiều dài vợt: 685mm</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Trọng lượng: 4U (Avg 83g)&nbsp;</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Chu vi cán vợt: G5</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Sức căng khuyến nghị: 20 - 28Lbs ~ 9 - 12.5kg</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Vợt cầu lông&nbsp;Yonex Astrox 100ZZ China Limited (Nội địa trung)&nbsp;được sản xuất và&nbsp;phân phối riếng&nbsp;tại thị trường&nbsp;Trung Quốc</span></span></p>
+
+<h2 style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>3. Các ưu điểm và công nghệ tích hợp trên vợt cầu lông&nbsp;Yonex Astrox 100ZZ China Limited (Nội Địa Trung)</strong></span></span></h2>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">-&nbsp;<strong>ISOMETRIC:&nbsp;</strong>Công nghệ thiết kế&nbsp;hình vuông&nbsp;giúp đảm bảo tính&nbsp;tương đồng về độ dài và góc của&nbsp;các dây dọc cũng như dây ngang, tăng tối đa điểm ngọt&nbsp;theo mọi hướng, khung vợt lớn hơn nên khi cầu chạm mặt vợt ở những điểm khác nhau trên mặt vợt vẫn&nbsp;mang lại cảm giác đánh tốt nhất.</span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><img alt="Isometric" src="100zz4.webp" style="height:600px; width:600px"></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">-&nbsp;<strong>NANOMETRIC</strong>: Cải&nbsp;thiện độ bền liên kết giữ các sợi carbon cho phép đưa cấu trúc&nbsp;vợt lên một đẳng cấp khác. Bằng cách giảm lượng carbon trong trục&nbsp;hơn 60% so với một cây vợt thông thường trong khi vẫn giữ được độ cứng giúp vung vợt nhanh hơn thêm 30km/h.&nbsp;Ngoài ra còn có có một số đặc tính khác hỗ trợ người chơi như độ uốn của vợt được tăng lên, khả năng hấp thụ chấn được tăng lên thêm 40%,&nbsp;Yonex đã tạo ra một cây vợt mang tính cách mạng về&nbsp;tốc&nbsp;độ,&nbsp;sự kiểm soát cầu và khả năng giảm chấn của vợt.</span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><img alt="nanometric image" src="100zz5.webp" style="height:610px; width:600px"></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">-&nbsp;<strong>NAMD</strong>:&nbsp;Là công nghệ phủ vật liệu nano lên trực tiếp vào sợi than chì&nbsp;cải thiện&nbsp;sự kết dính giữa than chì và nhựa giúp tăng độ đàn hồi&nbsp;cho đũa vợt và giúp đũa&nbsp;vợt quay lại trạng thái ổn định nhất. Những cải tiến trên giúp người chơi giảm bớt góc vung vợt, không cần dang rộng cánh tay quá nhiều mà vẫn có những cú đánh nhanh, phát lực mạnh và chuẩn xác mà thân vợt nhanh chóng hồi phục về trạng thái ban đầu.&nbsp;</span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a><img alt="" src="100zz6.webp" style="height:292px; width:600px"></a></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>- AERO-BOX FRAME:</strong>&nbsp;Mục đích của việc thiết kế mặt khung hình oval là để khi đánh vợt sẽ lướt gió cho không khí qua,&nbsp;BOX FRAME&nbsp;vát 2 bên giúp vợt cứng cáp hơn. Thiết kế giúp tăng khí động lực học, giúp chúng ta vung vợt nhanh hơn, đập cầu mạnh hơn</span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><img alt="" src="100zz7.webp" style="height:320px; width:600px"></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">-&nbsp;<strong>ROTATIONAL GENARATOR SYSTEM:</strong>&nbsp;Là công nghệ theo thuyết đối trọng. Trọng lực được phân bổ ở đầu, đoạn nối&nbsp;chữ T và phần đầu vợt. Việc phân bổ như vậy giúp cho cây vợt được đồng đều, hỗ trợ tốt nhất cho vợt sau khi đánh xong quả cầu trước và chuẩn bị cho pha đánh cầu tiếp theo dễ dàng hơn. Điều này giúp cho việc dù đang cầm vợt nặng đầu nhưng vẫn mang đến cảm giác cân bằng, thoải mái.</span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><a><img alt="" src="100zz8.webp" style="height:401px; width:600px"></a></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>- Solid Feel Core:&nbsp;</strong>Lõi vợt cứng chắc được tích hợp cho cây vợt giúp cắt giảm các rung động thừa có hại khi va chạm. Đây là công nghệ có trong tất cả các cây vợt được sản xuất tại Nhật Bản.</span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">&nbsp;<img alt="" src="100zz9.webp" style="height:261px; width:600px"></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>- Hyper Slim Shaft</strong>: Thiết kế mỏng trên&nbsp;vợt cầu lông&nbsp;Yonex Astrox 100ZZ China Limited (Nội Địa Trung)&nbsp;cho khả năng cắt không khí, giảm lực cản để tạo ra những cú vung vợt với tốc độ cầu&nbsp;đi nhanh hơn.</span></span></p>
+
+<p style="text-align:center"><img src="100zz10.webp" style="height:800px; width:600px"></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>-</strong>&nbsp;<strong>Energy Boost CAP PLUS</strong>: Hình dạng mới cho phép trục uốn cong, đảm bảo hiệu quả tối đa của&nbsp;Namd (vật liệu graphite uốn cong hơn và phản lực nhanh hơn),&nbsp;ổn định mặt vợt bằng cách ngăn trục xoắn, tăng khả năng kiểm soát.</span></span></p>
+
+<p style="text-align:center"><strong><img alt="" src="100zz11.webp" style="height:235px; width:600px"></strong></p>
+
+<p style="text-align:justify"><strong><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">-&nbsp;BLACK MICRO CORE:&nbsp;</span></span></strong><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Được sử dụng lần đầu tiên trong các cây vợt cầu lông của Yonex, BLACK MICRO CORE là vật liệu cứng và có&nbsp;mật độ phân tử cao được trang bị ở phần trên của khung VOLTRIC FB cho phép người chơi đánh với cảm giác chắc chắn mạnh mẽ, hạn chế chống rung tối đa.</span></span></p>
+
+<p style="text-align:center"><img src="100zz12.webp" style="height:605px; width:600px"></p>
+
+<p><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>- New Built in T - Joint</strong></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">Được&nbsp;sản xuất từ một loại nhựa nhẹ đặc biệt kết hợp với nhựa Epoxy và chất tạo bọt giúp tăng cường chất lượng và hiệu suất bằng cách tăng độ ổn định của quả cầu trên mặt vợt. Công nghệ&nbsp;được áp dụng ở phần chữ&nbsp;T của vợt giúp hỗ trợ vợt tránh xoắn vợt&nbsp;sau khi thực hiện cú đánh trước đó giúp vợt nhanh&nbsp;chóng lấy lại ổn định cho những cú đánh tiếp theo và giúp&nbsp;tăng kiểm soát cầu.</span></span></p>
+
+<p style="text-align:center"><strong><img alt="" src="100zz13.webp"></strong></p>
+
+<h2 style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif"><strong>4. Đối tượng phù hợp với vợt cầu lông&nbsp;Yonex Astrox 100ZZ China Limited (Nội Địa Trung)</strong></span></span></h2>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">-<strong> Yonex Astrox 100ZZ China Limited</strong> phù hợp cho người có lực cổ tay trung bình, khỏe, trình độ khá, vận động viên chuyên nghiệp.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Với đũa vợt siêu cứng không trợ lực&nbsp;nên những người mới tập chơi, người chơi nữ hoặc những ai cổ tay yếu nên cân nhắc sử dụng, đòi hỏi phải có thời gian dài làm quen mới thuần phục được.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Những pha vung vợt linh hoạt để phòng thủ hay những pha đập cầu cháy sân đều có hội tụ trên cây vợt này, đem đến nhiều sự thành công cho các VĐV trên thế giới, tiêu biểu cho dòng 100zz này không ai khác chính là tay vợt số 1 thế giới hiện tại Victor Axelsen.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:arial,helvetica,sans-serif">- Vợt thiên về nội dung đánh đơn với khả năng công thủ toàn diện, điều cầu bỏ nhỏ với độ chính xác cực kỳ cao. Ngoài ra người chơi cũng có thể lựa chọn để đánh đôi ở vị trí cầu sau để phát huy sức mạnh trong những pha tấn công trên dòng Astrox.</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><a style="font-family:arial,helvetica,sans-serif"><strong>Xem thêm:&nbsp;</strong>&nbsp;Những mẫu&nbsp;<a>vợt cầu lông</a>&nbsp;chất lượng chính hãng&nbsp;mới nhất tại&nbsp;<a href="votcaulong1.html"><strong>ShopTQDA</strong>.</a></span></span></p>
+            
+        </div>        </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+			  <div id="page_comment_list" class="list-comment"><hr> 
+
+
+					  </footer>
+					</div>
+				  </div>
+			</div>
+</div>
+</fieldset>
+								</div>
+							</div>
+    <div class="khungden">
+        <div class="cot">THÔNG TIN CHUNG<br>
+            TQDA Sports là hệ thống cửa hàng cầu lông với<br> hơn 50 chi nhánh trên toàn quốc, cung cấp sỉ và<br> lẻ các
+            mặt hàng dụng cụ cầu lông từ phong trào<br> tới chuyên nghiệp<br>
+
+            Với sứ mệnh: "TQDA cam kết mang đến những<br> sản phẩm, dịch vụ chất lượng tốt nhất phục vụ<br> cho người
+            chơi thể thao để nâng cao sức khỏe<br> của chính mình."<br>
+
+            Tầm nhìn: "Trở thành nhà phân phối và sản xuất<br> thể thao lớn nhất Việt Nam"</div>
+        <div class="cot">THÔNG TIN LIÊN HỆ<br>
+            Hệ thống cửa hàng: 1 shop Premium 59 cửa<br> hàng trên toàn quốc<br>
+            Xem tất cả các cửa hàng TQDA<br>
+
+            Hotline: 0931335214 | 0963261328 | 0364655945<br>
+            Email: TQDA@gmail.com<br>
+            Hợp tác kinh doanh: 0931335214 (Mr. Quân)<br>
+            Hotline bán sỉ: 0911 105 211<br>
+            Nhượng quyền thương hiệu: 0963261328 (Mr. Nan)<br>
+            Than phiền dịch vụ: 0364655945 (Mr. Đức Anh)</div>
+        <div class="cot">CHÍNH SÁCH<br>
+            Chính sách đổi trả,hoàn tiền<br>
+            Chính sách bảo hành<br>
+            Chính sách xử lý khiếu nại<br>
+            Chính sách vận chuyển<br>
+            Điều khoản sử dụng<br>
+            Chính Sách Bảo Mật Thông Tin<br>
+            Chính sách nhượng quyền</div>
+        <div class="cot">HƯỚNG DẪN<br>
+            Tìm hiểu công việc tập huấn tennis trước khi<br> tổ chức giải đấu<br>
+            Bảng size Lining - Cách chọn size quần áo<br> lining, giày cầu lông Lining<br>
+            Hướng dẫn cách tập tennis cho người mới<br> chơi<br>
+            Hướng dẫn cách chọn vợt cầu lông cho người<br> mới chơi<br>
+            Hướng dẫn thanh toán<br>
+            Kiểm tra bảo hành<br>
+            Kiểm tra đơn hàng<br>
+            HƯỚNG DẪN MUA HÀNG</div>
+    </div>
+    <div class="khungcam">
+        <div class="cot">
+            © CÔNG TY TNHH TQDA SPORTS<br>
+            GPKD số 0559966452 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 20/10/2023<br>
+            GĐ/Sở hữu by TQDA<bsite:br>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../index/ontop.png" alt=""></button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+</html>
