@@ -24,13 +24,13 @@
         </script>
 </head>
 
-<body onload="changAccountName()">
+<body onload="changAccountName()" style="min-height: 80vh;">
     <div>
 		<div class="container" style="border: 5px solid orange; border-radius: 10px;margin-top: 80px; margin-bottom: 50px;">
             <form onsubmit="alert('Thêm người dùng thành công')" >	
 		<div class="themsanphamrow">
             <div class="themsanphamkhung1">
-                <div class="themsanphamtext1" style="margin-left: 56px;">THÊM NGƯỜI DÙNG:</div>
+                <div class="themsanphamtext1" style="margin-left: 60px;">THÊM NGƯỜI DÙNG</div>
                 <div style="margin-left: 200px;">
                     
                     <input type="themsanphamkhungcon" placeholder="Họ và tên:" required>
@@ -39,27 +39,21 @@
                     <input type="themsanphamkhungcon" placeholder="Gmail:" required>
                     <input type="themsanphamkhungcon" placeholder="Số điện thoại" required>
                     <br>
-                    <button class="status3" style="font-size: large; margin-top: 20px; margin-left: 110px; padding: 10px 15px;">Thêm sản phẩm</button>
+                    <button class="status3" style="font-size: large; margin-top: 20px; margin-left: 73.5px; padding: 10px 15px;">Thêm người dùng</button>
                     
                 </div>
             </div>
-
-                <!-- <form onsubmit="Send()"> -->
-                    <!-- <input type="themsanphamkhungcon2" placeholder="Thêm đường link ảnh sản phẩm: " required> -->
-                    <input type="file" accept="image/*" id="themsanphamkhungcon2" onchange="displayImage(this)" required style="margin-top: 80px;">
+                    <input type="file" accept="image/*" id="themsanphamkhungcon2" onchange="displayImage(this)" required style="margin-top: 80px; width: 200px; height: 25px;">
                     <img id="previewImage" src="#" alt="Hiển thị ảnh tại đây" style="max-width: 200px; max-height: 200px; margin-top: 80px;">
                     <br>
-                    <!-- <button class="buttonthemvaogiohang">Thêm ảnh</button> -->
-                <!-- </form> -->
                 </div>
                 <div>
-                    
                 </div>
                 <button class="status3" type="button" onclick="window.location.href='../index/quanlitaikhoan.html' " style="
                 padding: 10px 15px;
                 margin: 6px 2px;
                 font-size: larger;
-              ">Back</button> 
+              ">Back</button>
         </div>
         
     </form>
@@ -76,12 +70,7 @@
 </fieldset>
 								</div>
 							</div>
-    <div class="khungcam" style="margin-top: 100px;">
-        <div class="cot">
-            © CÔNG TY TNHH TQDA SPORTS<br>
-            GPKD số 0559966452 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 20/10/2023<br>
-            GĐ/Sở hữu by TQDA<bsite:br>
-        </div>
+  
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../index/ontop.png" alt=""></button>
     <script>

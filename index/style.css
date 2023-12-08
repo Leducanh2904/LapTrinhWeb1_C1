@@ -16,7 +16,6 @@
 
 body {
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 .container {
@@ -738,7 +737,7 @@ body {
   cursor: pointer;
 }
 .status3{
-  border: none;
+  border: 2px solid white;
   background-color: orange;
   border-radius: 3px;
   color: white;

@@ -118,27 +118,27 @@
                     <br>
                     <div class="khungthanhtoan">
                         <div>
-                            <div>
-                                <input type="text" placeholder="Họ và tên người nhận">
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Số điện thoại">
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Địa chỉ">
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Email">
-                            </div>
-                            <p><b>Phương thức thanh toán</b></p>
-                            <div>
-                                <label>
-                                    <input type="radio" name="options" id="option1" checked>
-                                    <b>Thanh toán khi nhận hàng</b>
-                                </label>
-                            </div>
+                            <form name="pay" action=".." onsubmit="thanhtoan()">
+                                <div>
+                                    <input type="text" placeholder="Họ và tên người nhận">
+                                    <input type="text" placeholder="Số điện thoại">
+                                    <input type="text" placeholder="Email">
+                                    <input type="text" id="address" placeholder="Địa chỉ" required>
+                                    <input type="radio" name="rd1" value="Chon" onchange="changeAddress()"> Chọn địa chỉ từ tài khoản <br>
+                                    <input type="radio" name="rd1" value="Nhap" onchange="changeAddress()"> Nhập địa chỉ mới
+                                </div>
+                                
+                            
+                            
                             
                         <div>
+                            <p><b>Phương thức thanh toán</b></p>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="options" id="option1">
+                                        <b>Thanh toán khi nhận hàng</b>
+                                    </label>
+                                </div>
                             <label>
                                 <input type="radio" name="options" id="option2">
                                <b>Thanh toán online (Thẻ visa, Thẻ ngân hàng, Momo)</b>
@@ -147,9 +147,18 @@
                                 Tên: Phạm Ngọc Triều<br>
                                 (Nội dung chuyển khoản: Tên + SDT đặt hàng)
                                </p>
+                               
                             </label>
+                            <p class="thanhtoantext9"><input type="button" value="ĐẶT HÀNG" style="background-color: orange;
+                                color: white;
+                                padding: 2px 2px;
+                                margin-top: 50px ;
+                                margin-right: -20px;
+                                border-color: orange;
+                                cursor: pointer;
+                                width: 150px;"  onclick="alert('Đặt hàng thành công')"></p>
                         </div>
-                            
+                    </form>
                         </div>
                         <div>
                             <div>
@@ -213,14 +222,14 @@
                     <div>
                         <a href="../index/giohang.html">
                         <p class="thanhtoantext8">Quay về giỏ hàng</p></a>
-                        <p class="thanhtoantext9"><input type="button" value="ĐẶT HÀNG" style="background-color: orange;
+                        <!-- <p class="thanhtoantext9"><input type="button" value="ĐẶT HÀNG" style="background-color: orange;
                             color: white;
                             padding: 2px 2px;
                             margin-top: 0px ;
                             margin-left: 5px;
                             border-color: orange;
                             cursor: pointer;
-                            width: 150px;"  onclick="alert('Đặt hàng thành công')"></p>
+                            width: 150px;"  onclick="alert('Đặt hàng thành công')"></p> -->
                     </div>
                 </div>
             </div>

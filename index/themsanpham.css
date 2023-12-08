@@ -1,12 +1,10 @@
 .themsanphamrow {
     display: flex;
     justify-content: center;
-    /* Căn giữa các .khungbao2 */
     padding: 20px;
 }
 .themsanphamkhung2 {
     width: 500px;
-    height: 500px;
     text-align: left;
     line-height: 20px;
     background-color: white;
@@ -14,12 +12,11 @@
     padding-left: 20px;
     border-style: solid;
     border-radius: 5%;
-    margin-top: 0px;
+ 
 }
 
 .themsanphamkhung1 {
     width: 500px;
-    height: 500px;
     text-align: center;
     line-height: 20px;
     background-color: white;
@@ -41,7 +38,7 @@ input[type="themsanphamkhungcon"] {
     background-color: orange;
     color: white;
     padding: 14px 0%;
-    margin-top: 20px;
+  
     margin-right: -127px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
@@ -53,6 +50,7 @@ input[type="themsanphamkhungcon1"] {
     margin-top: 20px;
     margin-left: 10px;
     justify-content:flex-start;
+   
 }
 input[type="themsanphamkhungcon2"] {
     width: 460px;

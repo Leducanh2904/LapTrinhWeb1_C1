@@ -108,3 +108,12 @@ a{
     color: black;
     margin-top: 0px;
 }
+.my-element {
+    color: white;
+  }
+
+  /* Define the styles for the hover state */
+  .my-element:hover {
+    color: black;
+    font-weight: bold;
+  }
