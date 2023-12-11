@@ -209,7 +209,7 @@ body {
 /* ======================= Cards ====================== */
 .cardBox {
   position: relative;
-  width: 100%;
+  width: 900px;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -223,7 +223,7 @@ body {
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
+  
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
@@ -498,6 +498,7 @@ cursor: pointer;
   height: 60px;
   font-size: x-large;
   justify-content: left;
+  color: white;
   background-color: orange;
   border-radius: 5px;
   
@@ -900,7 +901,7 @@ cursor: pointer;
 .tsp1{
   margin-bottom: 10px;
   width: 360px;
-  height: 45px;
+  height: 30px;
 }
 .tsp2 {
   margin-bottom: 15px;
@@ -930,13 +931,19 @@ cursor: pointer;
 
 
 /* Create two equal columns that floats next to each other */
-.column, .column3 {
+
+.column {
   float: left;
   width: 50%;
   padding: 10px;
-  height: 500px;
+  height: 520px;
 }
-
+.column3{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 540px;
+}
 /* Clear floats after the columns */
 .row:after, .row3:after {
   content: "";

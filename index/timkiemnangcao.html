@@ -89,7 +89,7 @@
                     </div>
                 </li>
             </ul>
-    <li ><a href="../tintuc/tintuc.html">Tin tức</a></li>
+    <li class="nodrop"><a href="../tintuc/tintuc.html">Tin tức</a></li>
     <li class="dropdown"><div class = "main-menu"><a class="dropbtn">Hướng dẫn</a></div>
         
         <div class="dropdown-content">
@@ -105,12 +105,12 @@
                 </li>
             </ul>
     
-            <li ><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
-            <li ><a href="../lienhe/lienhe.html">Liên hệ</a></li>
+            <li class="nodrop"><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
+            <li class="nodrop"><a href="../lienhe/lienhe.html">Liên hệ</a></li>
 </ul><div class="khungtimkiem">
     <form action="#" method="GET" id="advanced-search-form">
-        <label for="search">Chọn loại sản phẩm</label>
-        <select id="chonsanpham" name="phanloai"> 
+        <label for="search">Chọn loại sản phẩm</label> 
+        <select id="chonsanpham" name="phanloai"  style="margin-top: 8px;"> 
             <option value="allin">[None]</option>
             <option value="votcaulong">Tất cả</option>
             <option value="votcaulong">Vợt cầu lông</option>
@@ -121,9 +121,9 @@
 
         </select>
 
-
+        <br> <br>
         <label for="brand">Thương hiệu</label>
-        <select name="thuonghieu" id="chonthuonghieu">
+        <select name="thuonghieu" id="chonthuonghieu"  style="margin-top: 8px;">
             <option value="yonex">[None]</option>
             <option value="yonex">Yonex</option>
             <option value="yonex">Lining</option>
@@ -132,24 +132,24 @@
             <option value="yonex">Kawasaki</option>
             <option value="yonex">Victor</option>
 
-        </select>
-
+        </select> 
+        <br> <br> <br>
         <div class="price-range-container"> <div> <label for="price"><b style="font-size: large;">Mức giá</b> </label></div>
            
             <input type="range" id="price" name="price" min="0" max="100000000" step="100000" value="5000000" oninput="updatePriceValue(this.value)">
-            <span id="price-display">0 <b>đ</b></span>
+            <span id="price-display">4,500,000 <b>đ</b></span>
         </div>
-
+ 
         <label for="price-range">Phong cách chơi</label>
-        <select id="price-range" name="price-range">
+        <select id="price-range" name="price-range"  style="margin-top: 8px;">
             <option value="allin">[None]</option>
             <option value="attack">Đa dụng</option>
             <option value="attack">Tấn công</option>
             <option value="medium">Công thủ toàn diện</option>
             <option value="protected">Phản tạt, phòng thủ</option>
-        </select>
+        </select> <br> <br>
         <label for="location">Chi nhánh</label>
-        <select name="chinhanh" id="local">
+        <select name="chinhanh" id="local"  style="margin-top: 8px;">
             <option value="allin">[None]</option>
 
         <option value="TQDA">TQDA PREMIUM Quận 1</option>
@@ -170,7 +170,7 @@
         <option value="TQDA">TQDA Quận Tân Bình</option>
         
 
-    </select>
+    </select> <br> <br> 
      <button class="custom-button" type="button" onclick="window.location.href='../index/danhmuctknangcao.html'" >Tìm</button>
     </form>
 </div>

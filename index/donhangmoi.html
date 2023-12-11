@@ -21,16 +21,13 @@
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="">
                         <span class="icon">
                             <img src="../index/iconcaulong.png" alt="">
                          </span>
-                        
                     </a>
-                    
-                    
                 </li>
-                
+
                 <li>
                     <a href="admin.html">
                         <span class="icon">
@@ -41,28 +38,11 @@
                     </a>
                 </li>
 
-                <li>
-                    <a href="khachhang.html">
-                        <span class="icon">
-                            <ion-icon name="people-outline"></ion-icon>
-                        </span>
-                        <span class="title">Khách hàng</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="email.html">
-                        <span class="icon">
-                            <ion-icon name="chatbubble-outline"></ion-icon>
-                        </span>
-                        <span class="title">E - Mail</span>
-                    </a>
-                </li>
-
+              
                 <li>
                     <a href="quanlisanpham.html">
                         <span class="icon">
-                            <ion-icon name="help-outline"></ion-icon>
+                            <ion-icon name="cube-outline"></ion-icon>
                         </span>
                         <span class="title">Quản lí sản phẩm</span>
                     </a>
@@ -71,7 +51,7 @@
                 <li>
                     <a href="quanlidonhang.html">
                         <span class="icon">
-                            <ion-icon name="settings-outline"></ion-icon>
+                            <ion-icon name="receipt-outline"></ion-icon>
                         </span>
                         <span class="title">Quản lí đơn hàng</span>
                     </a>
@@ -80,7 +60,7 @@
                 <li>
                     <a href="quanlitaikhoan.html">
                         <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <ion-icon name="people-outline"></ion-icon>
                         </span>
                         <span class="title">Quản lí người dùng</span>
                     </a>
@@ -89,45 +69,29 @@
                 <li>
                     <a href="thongke.html">
                         <span class="icon">
-                            <ion-icon name="log-out-outline"></ion-icon>
+                            <ion-icon name="bar-chart-outline"></ion-icon>
                         </span>
-                        <span class="title"> Thống kê </span>
+                        <span class="title">Thống kê</span>
                     </a>
                 </li>
-                
             </ul>
-           
-           
         </div>
 
         <!-- ========================= Main ==================== -->
         <div class="main">
             <div class="topbar">
-                <div class="toggle">
-                    
-                </div>
-
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search here">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </label>
-                </div>
-
-                <div class="user">
-                    <img src="../index/customer03.jpg" alt="">
-                </div>
+                
             </div>
            
             <!-- ================ Order Details List ================= -->
             <div class="card">
                 
-                <h1 class ="title1" style="margin-left: 500px;">Tạo đơn hàng</h1> <br>
+                <h1 class ="title1" style="margin-left: 440px;">Tạo đơn hàng</h1> <br>
                 <form class="form-sample">
                     <div class="form-group">
                         <form >
-                            <label for="code">Mã đơn hàng*</label> 
-                            <input type="text" name="code" id="code" class="form-xnxx" placeholder="Mã đơn hàng">
+                            <label for="code" >Mã đơn hàng*</label> 
+                            <input type="text" name="code" id="code" class="form-xnxx" placeholder="Mã đơn hàng" >
                         </form>
                     </div>
                     <div class="form-group">
@@ -225,26 +189,32 @@
                             </div>
                         </div>
                     </div>
-                   <button style=" margin-left: 500px;font-size: x-large; border-radius: 5px; background-color: orange; color: white; width: 250px; height: 40px;">Lưu</button>
+                   <button class="tao" style=" margin-left: 680px;font-size: x-large; border-radius: 5px; background-color: orange; color: white; width: 250px; height: 40px;" onclick="alert('Tạo đơn hàng thành công')">Tạo</button>
                 </form>
             </div>
 
     <!-- ====== Styles ======= -->
 <style>
+.tao:hover {
+    background-color: orange ;
+    border-radius: 2px;
+    border: orange ;
+    
+}
 .form-group form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #555;
 }
 .form-xnxx  {
-    width: 1200px;
+    width: 1100px;
     padding: 12px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 .form-xnxx1 {
-    width: 1200px;
+    width: 1100px;
     padding: 30px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -295,7 +265,7 @@
 
 
 .card {
-    max-width: 1200px;
+    max-width: 1100px;
   margin: 20px auto;
   background-color: #fff;
   border-radius: 8px;

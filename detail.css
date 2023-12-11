@@ -127,11 +127,7 @@ li {
     float: left;
 }
 
-.dropdown {
 
-    margin: 0px 100px;
-    /* Điều chỉnh khoảng cách giữa các mục dropdown  */
-}
 
 li a,
 .dropbtn {
@@ -363,7 +359,6 @@ li.dropdown {
 .main-menu {
     display: flex;
     justify-content: center;
-    margin: 1px;
 }
 
 .khungden {

@@ -68,7 +68,7 @@
 .LogoChinh img {
     width: 100px;
     margin-right: 5px;
-}
+}   
 
 .logohotline {
     text-align: center;
@@ -275,13 +275,7 @@ li.dropdown {
     transform: rotateY(180deg);
 }
 
-.row {
-    display: flex;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    /* position: absolute; */
-    /* Sử dụng flexbox để xếp các phần tử trong hàng */
-}
+
 
 .wrapper {
     width: 100px;
@@ -289,36 +283,7 @@ li.dropdown {
     max-width: 200px;
 }
 
-.khung {
-    width: 40%;
-    /* Chiều rộng của mỗi khung */
-    height: 80px;
-    /* Độ cao của mỗi khung */
-    border: 1px solid #000;
-    /* Đường viền đen 1px */
-    border-color: rgb(138, 106, 106);
-    border-radius: 10px;
-    margin: 10px;
-    /* Khoảng cách giữa các khung */
-    text-align: center;
-    /* Căn giữa nội dung trong khung */
-    color: orange;
-    line-height: 30px;
-    /* Canh giữa nội dung theo chiều dọc */
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-
-.anhkhung {
-    display: flex;
-    justify-content: center;
-    height: 5vh;
-}
 
 .text1 {
     text-align: center;
@@ -381,7 +346,40 @@ li.dropdown {
     transform: translate(-50%, -140%);
     -ms-transform: translate(-50%, -50%);
 }
+.khung {
+    width: 40%;
+    height: 80px;
+    border: 1px solid #000;
+    border-color: rgb(138, 106, 106);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    color: orange;
+    line-height: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.row {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.anhkhung {
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+}
+
+.anhkhung img {
+    max-width: 100%; 
+    height: auto; 
+}
 .container:hover .image {
     opacity: 0.3;
 }
