@@ -224,6 +224,7 @@ Thiết kế cắt gió, giảm thiểu tối đa lực cản không khí giúp 
                                   accept="image/*"
                                   id="themsanphamkhungcon2"
                                   onchange="displayImage(this)"
+                                  multiple="multiple"
                                 />
                                 <br />
                                 <img
@@ -232,21 +233,28 @@ Thiết kế cắt gió, giảm thiểu tối đa lực cản không khí giúp 
                                   alt="Hiển thị ảnh tại đây"
                                   style="max-width: 200px; max-height: 200px"
                                 />
+                                <img
+                                  id="previewImage3"
+                                  src="../votcaulong/100zz0.png"
+                                  alt="Hiển thị ảnh tại đây"
+                                  style="max-width: 200px; max-height: 200px"
+                                />
                                 <br>
                                 <div id="delBtn">
-                                    <button class="status1 inProgress"  type="button" onclick="deleteImg('delBtn','previewImage')">Xóa hình ảnh</button>
+                                    <button class="status1 inProgress"  type="button" onclick="deleteImg('delBtn','previewImage','previewImage3')">Xóa hình ảnh</button>
                                 </div>
-                                
                               </div>
                             </div>
                           </div>
                           <script>
-                            function deleteImg(delBtn,previewImage){
+                            function deleteImg(delBtn,previewImage,previewImage3){
                                     document.getElementById(previewImage).src="#";
+                                    document.getElementById(previewImage3).src="#";
                                     document.getElementById(delBtn).style.display="none"; 
                             }
                             function displayImage(input) {
                               var file = input.files[0];
+                              var file1 = input.files[1];
                               if (file) {
                                 var reader = new FileReader();
                                 reader.onload = function (e) {
@@ -254,6 +262,14 @@ Thiết kế cắt gió, giảm thiểu tối đa lực cản không khí giúp 
                                     e.target.result;
                                 };
                                 reader.readAsDataURL(file);
+                              }
+                              if (file1) {
+                                var reader1 = new FileReader();
+                                reader1.onload = function (e1) {
+                                  document.getElementById("previewImage3").src =
+                                    e1.target.result;
+                                };
+                                reader1.readAsDataURL(file1);
                               }
                               document.getElementById("delBtn").style.display="inline"; 
                             }
