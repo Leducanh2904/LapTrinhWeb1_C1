@@ -8,28 +8,7 @@
     <link rel="stylesheet" href="../index/styleTLWeb1.css">
     <link rel="stylesheet" href="../product2.css">
     <script src="../index/function.js"></script>
-    <script>
-        function addToCart() {
-            var selectedSize = document.querySelector('input[name="size"]:checked');
     
-            if (selectedSize) {
-                var sizeValue = selectedSize.value;
-    
-                if (sizeValue === '37') {
-                    alert('Đã thêm vào giỏ hàng');
-                } else {
-                    alert('Mặt hàng đã hết, vui lòng chọn lại');
-                    // Reset radio button selection
-                    var sizeRadios = document.querySelectorAll('input[name="size"]');
-                    sizeRadios.forEach(function (radio) {
-                        radio.checked = false;
-                    });
-                }
-            } else {
-                alert('Vui lòng chọn size');
-            }
-        }
-    </script>
 </head>
 
 <body onload="changAccountName()">
@@ -107,7 +86,7 @@
                         </div>
                     </li>
                 </ul>
-        <li ><a href="../tintuc/tintuc.html">Tin tức</a></li>
+        <li class="nodrop"><a href="../tintuc/tintuc.html">Tin tức</a></li>
         <li class="dropdown"><div class = "main-menu"><a class="dropbtn">Hướng dẫn</a></div>
             
             <div class="dropdown-content">
@@ -122,8 +101,8 @@
                         </div>
                     </li>
                 </ul>
-        <li><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
-        <li ><a href="../lienhe/lienhe.html">Liên hệ</a></li>
+        <li class="nodrop"><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
+        <li class="nodrop"><a href="../lienhe/lienhe.html">Liên hệ</a></li>
     </ul>
     <div>
         <div class="bodywrap">	

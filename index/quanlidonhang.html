@@ -16,7 +16,7 @@
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="">
                         <span class="icon">
                             <img src="../index/iconcaulong.png" alt="">
                          </span>
@@ -36,7 +36,7 @@
                 <li>
                     <a href="khachhang.html">
                         <span class="icon">
-                            <ion-icon name="people-outline"></ion-icon>
+                            <ion-icon name="man-outline"></ion-icon>
                         </span>
                         <span class="title">Khách hàng</span>
                     </a>
@@ -45,7 +45,7 @@
                 <li>
                     <a href="email.html">
                         <span class="icon">
-                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="mail-unread-outline"></ion-icon>
                         </span>
                         <span class="title">E - Mail</span>
                     </a>
@@ -54,7 +54,7 @@
                 <li>
                     <a href="quanlisanpham.html">
                         <span class="icon">
-                            <ion-icon name="help-outline"></ion-icon>
+                            <ion-icon name="cube-outline"></ion-icon>
                         </span>
                         <span class="title">Quản lí sản phẩm</span>
                     </a>
@@ -63,7 +63,7 @@
                 <li>
                     <a href="quanlidonhang.html">
                         <span class="icon">
-                            <ion-icon name="settings-outline"></ion-icon>
+                            <ion-icon name="receipt-outline"></ion-icon>
                         </span>
                         <span class="title">Quản lí đơn hàng</span>
                     </a>
@@ -72,7 +72,7 @@
                 <li>
                     <a href="quanlitaikhoan.html">
                         <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <ion-icon name="people-outline"></ion-icon>
                         </span>
                         <span class="title">Quản lí người dùng</span>
                     </a>
@@ -81,7 +81,7 @@
                 <li>
                     <a href="thongke.html">
                         <span class="icon">
-                            <ion-icon name="log-out-outline"></ion-icon>
+                            <ion-icon name="bar-chart-outline"></ion-icon>
                         </span>
                         <span class="title">Thống kê</span>
                     </a>
@@ -93,7 +93,7 @@
         <div class="main">
             <div class="topbar">
                 <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
+                    
                 </div>
 
                 <div class="search">
@@ -112,15 +112,15 @@
             <div class="details">
                 <div class="recentOrders" style="width: 1200px;">
                     <div class="cardHeader">
-                        <h2 id="orderHeader">Đơn hàng được hiển thị</h2>
-                    </div>
+                        <h2 id="orderHeader">Đơn hàng được hiển thị</h2> 
+                    </div><br>
                     <div>
                         <label for="startDate">Từ ngày:</label>
                         <input type="date" id="startDate">
                         <label for="endDate">Đến ngày:</label>
                         <input type="date" id="endDate">
-                        <button onclick="hienThiDonHang()">Hiển thị đơn hàng</button>
-                    </div>
+                        <button onclick="hienThiDonHang()" style="background-color: orange; border-radius: 3px; width: 140px; ">Hiển thị đơn hàng</button>
+                    </div> <br>
 
 
                     <table>
@@ -232,7 +232,7 @@
                         </table>
                         <div class="tdh">
                             <a href="../index/donhangmoi.html" class="" >    
-                                <button class="status inProgress" type="button" style="font-size: x-large; border-radius: 5px; background-color: orange; color: white; width: 250px; height: 40px;" > Tạo đơn hàng mới</button>
+                                <button class="saveBtn" type="button" style="font-size: large; border-radius: 5px; border: 2px solid black; width: 180px; height: 60px;" > Tạo đơn hàng mới</button>
                             </a>
                         </div>
                         

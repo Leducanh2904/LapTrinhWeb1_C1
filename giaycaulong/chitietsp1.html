@@ -11,13 +11,17 @@
     <script>
         function addToCart() {
             var selectedSize = document.querySelector('input[name="size"]:checked');
-    
+            if(isLogin){
             if (selectedSize) {
                 alert('Thêm vào giỏ hàng thành công');
             } else {
                 alert('Chưa chọn size, vui lòng chọn lại');
             }
         }
+        else if(!isLogin){
+        alert("Bạn phải đăng nhập mới thêm vào giỏ hàng được !!")
+    }
+}
     </script>
 </head>
 
@@ -99,7 +103,7 @@
                     </div>
                 </li>
             </ul>
-    <li ><a href="../tintuc/tintuc.html">Tin tức</a></li>
+    <li class="nodrop"><a href="../tintuc/tintuc.html">Tin tức</a></li>
     <li class="dropdown"><div class = "main-menu"><a class="dropbtn">Hướng dẫn</a></div>
         
         <div class="dropdown-content">
@@ -115,8 +119,8 @@
                 </li>
             </ul>
     
-            <li><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
-            <li ><a href="../lienhe/lienhe.html">Liên hệ</a></li>
+            <li class="nodrop"><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
+            <li class="nodrop"><a href="../lienhe/lienhe.html">Liên hệ</a></li>
 </ul>
     <div>
         <div class="bodywrap">

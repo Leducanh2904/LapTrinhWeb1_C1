@@ -51,3 +51,29 @@ function accessCart(){
         document.getElementById("giohang").href="#";
     }
 }
+
+function addToCart() {
+    var selectedSize = document.querySelector('input[name="size"]:checked');
+
+    if(isLogin){
+        if (selectedSize) {
+            var sizeValue = selectedSize.value;
+    
+            if (sizeValue === '37') {
+                alert('Đã thêm vào giỏ hàng');
+            } else {
+                alert('Mặt hàng đã hết, vui lòng chọn lại');
+                // Reset radio button selection
+                var sizeRadios = document.querySelectorAll('input[name="size"]');
+                sizeRadios.forEach(function (radio) {
+                    radio.checked = false;
+                });
+            }
+        } else {
+            alert('Vui lòng chọn size');
+        }
+    }
+    else if(!isLogin){
+        alert("Bạn phải đăng nhập mới thêm vào giỏ hàng được !!")
+    }
+}   

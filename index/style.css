@@ -302,7 +302,6 @@ body {
 }
 
 
-
 .details .cardHeader {
   display: flex;
   justify-content: space-between;
@@ -418,7 +417,7 @@ body {
   width: 1200px;
 }
 .recentOrders2 {
-  width: 1200px;
+  width: 1190px;
 }
 
 .details .recentOrder table tr {
@@ -483,6 +482,7 @@ body {
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
+cursor: pointer;
 }
 .status2.inProgress{
   padding: 2px 4px;
@@ -492,7 +492,7 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
-.themsanpham button {
+.status4 {
   margin-top: 20px;
   width: 170px;
   height: 60px;
@@ -502,10 +502,12 @@ body {
   border-radius: 5px;
   
 }
-.themsanpham button:hover { 
-  background-color: orange;
+.status4:hover { 
+  color: orange;
+  background-color: white;
   border: 1px solid orange;
-   }
+  cursor: pointer;
+}
 .recentCustomers {
   position: relative;
   display: grid;
@@ -756,7 +758,7 @@ body {
 /* Chổ Quân làm việc, tránh đụng vào */
 
 
-.modal {
+.modal, .modal3 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -769,7 +771,33 @@ body {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.modal-content {
+.modal-content, .modal-content3 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 65%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content1 {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -793,7 +821,7 @@ body {
   to {top:0; opacity:1}
 }
 /* The Close Button */
-.close {
+.close, .close3 {
   color: white;
   float: right;
   font-size: 28px;
@@ -807,21 +835,102 @@ body {
   cursor: pointer;
 }
 
-.modal-header {
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header, .modal-header3 {
   padding: 2px 16px;
   background-color: orange;
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
+.modal-header1 {
   padding: 2px 16px;
   background-color: orange;
   color: white;
 }
+
+.modal-body, .modal-body3 {padding: 2px 16px;
+  
+}
+
+.modal-footer, .modal-footer3 {
+  padding: 2px 16px;
+  background-color: orange;
+  color: white;
+}
+.modal-body1 {
+  padding: 5px 30px;
+  
+  
+}
+.modal-body1 input {
+  border-radius: 5px;
+  box-sizing: border-box;
+  
+ 
+}
+
+
+.modal-footer1 {
+  padding: 2px 16px;
+  background-color: orange;
+  color: white;
+}
+
+/* --------------------------------------------------------- them nguoi dung ------------------------------ */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 500px;
+ 
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tsp1{
+  margin-bottom: 10px;
+  width: 360px;
+  height: 45px;
+}
+.tsp2 {
+  margin-bottom: 15px;
+  width: 400px;
+  height: 50px;
+}
+.saveBtn1{
+  width: 170px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: large;
+  background-color: orange;
+  border: none;
+  color: white;
+}
+.saveBtn1:hover{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+}
+
+
+
+
+
 /* Create two equal columns that floats next to each other */
-.column {
+.column, .column3 {
   float: left;
   width: 50%;
   padding: 10px;
@@ -829,11 +938,19 @@ body {
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row:after, .row3:after {
   content: "";
   display: table;
   clear: both;
 }
+
+
+/* ------------------------------------ */
+.title1{
+  margin-bottom: 10px;
+  
+}
+
 .tsp{
   margin-bottom: 10px;
   width: 250px;
@@ -856,3 +973,4 @@ body {
   border-radius: 5px;
   color: black;
 }
+
