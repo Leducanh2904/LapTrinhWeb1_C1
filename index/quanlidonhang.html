@@ -110,25 +110,33 @@
 
             <!-- ================ Order Details List ================= -->
             <div class="details">
-                <div class="recentOrders1">
+                <div class="recentOrders" style="width: 1200px;">
                     <div class="cardHeader">
-                        <h2>Đơn hàng được hiển thị</h2>
+                        <h2 id="orderHeader">Đơn hàng được hiển thị</h2>
                     </div>
+                    <div>
+                        <label for="startDate">Từ ngày:</label>
+                        <input type="date" id="startDate">
+                        <label for="endDate">Đến ngày:</label>
+                        <input type="date" id="endDate">
+                        <button onclick="hienThiDonHang()">Hiển thị đơn hàng</button>
+                    </div>
+
 
                     <table>
                         <thead>
                             <tr>
-                                <td>Mã đơn hàng</td>
-                                <td>Ngày xuất đơn</td>
-                                <td>Số lượng sản phẩm</td>
-                                <td>Tổng giá trị</td>
-                                <td>Trạng thái</td>
-                                <td style="text-align: center;">Thao tác quản trị viên</td>
-                                
+                                <th>Mã đơn hàng</th>
+                                <th>Ngày xuất đơn</th>
+                                <th>Số lượng sản phẩm</th>
+                                <th>Tổng giá trị đơn hàng</th>
+                                <th>Trạng thái</th>
+                                <th style="text-align: center;">Thao tác quản trị viên</th>
+                    
                             </tr>
                         </thead>
 
-                        <tbody>
+                        <tbody id="orderTableBody">
                             <script>
                                 function toggleButtons() {
                                     // Hiển thị hoặc ẩn nút thêm và nút xóa
@@ -144,9 +152,10 @@
                                     }
                                 }
                             </script>
+                        </tbody>
                             <tr>
                                 <td>2021032957845</td>
-                                <td>29/03/2021</td>
+                                <td>14/12/2023</td>
                                 <td>4</td>
                                 <td>10.200.000 ₫</td>
                                 <td>
@@ -163,13 +172,13 @@
 
                             <tr>
                                 <td>2021032957928</td>
-                                <td>24/10/2023</td>
+                                <td>24/12/2023</td>
                                 <td>10</td>
                                 <td>1.120.000 ₫</td>
                                 <td>
                                     <select name="trangthai">
-                                        <option value="1">Đã xử lý</option>
-                                        <option value="2">Chưa xử lý</option>
+                                        <option value="1">Chưa xử lí</option>
+                                        <option value="2">Đã xử lí</option>
                                     </select>
                                 </td>
 <td style="text-align: center;"><button class="status inProgress" type="button" onclick="toggleButtons()">Chi tiêt</button></td> 
@@ -179,7 +188,7 @@
 
                             <tr>
                                 <td>2021032952785</td>
-                                <td>11/09/2022</td>
+                                <td>11/12/2022</td>
                                 <td>1</td>
                                 <td>4.270.000 ₫</td>
                                 <td>
@@ -195,7 +204,7 @@
 
                             <tr>
                                 <td>2021032948329</td>
-                                <td>22/07/2023</td>
+                                <td>11/12/2023</td>
                                 <td>3</td>
                                 <td>3.240.000 ₫</td>
                                 <td>
@@ -213,16 +222,73 @@
                                 <td>4.560.000 ₫</td>
                                 <td>
                                     <select name="trangthai">
-                                        <option value="1">Đã xử lý</option>
-                                        <option value="2">Chưa xử lý</option>
+                                        <option value="1">Chưa xử lý</option>
+                                        <option value="2">Đã xử lý</option>
                                     </select>
                                 </td>
 
 <td style="text-align: center;"><button class="status inProgress" type="button" onclick="toggleButtons()">Chi tiết</button></td>                        
-                            </tr><tr>
+                            </tr> 
+                        </table>
+                        <div class="tdh">
+                            <a href="../index/donhangmoi.html" class="" >    
+                                <button class="status inProgress" type="button" style="font-size: x-large; border-radius: 5px; background-color: orange; color: white; width: 250px; height: 40px;" > Tạo đơn hàng mới</button>
+                            </a>
+                        </div>
+                        
+                                
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function hienThiDonHang() {
+            var startDate = document.getElementById('startDate').value;
+            var endDate = document.getElementById('endDate').value;
+            var orderHeader = document.getElementById('orderHeader');
+            var orderTableBody = document.getElementById('orderTableBody');
+
+            // Kiểm tra xem đã chọn đủ ngày tháng chưa
+            if (startDate === '' || endDate === '') {
+                alert('Vui lòng chọn cả "Từ ngày" và "Đến ngày".');
+                return;
+            }
+
+            // Chuyển đổi ngày tháng từ chuỗi sang đối tượng Date
+            var startDateTime = new Date(startDate);
+            var endDateTime = new Date(endDate);
+
+            // Kiểm tra xem ngày bắt đầu có trước ngày kết thúc không
+            if (startDateTime > endDateTime) {
+                alert('Ngày bắt đầu không thể sau ngày kết thúc.');
+                return;
+            }
+
+            // Xử lý logic hiển thị đơn hàng ở đây
+            // ...
+
+            // Sau khi xử lý logic, hiển thị thông tin trong bảng
+            orderHeader.innerHTML = 'Đơn hàng được hiển thị từ ' + startDate + ' đến ' + endDate;
+            orderTableBody.innerHTML = `
+                <tr>
+                    <td>2021032957845</td>
+                    <td>29/12/2023</td>
+                    <td>5</td>
+                    <td>12.200.000 ₫</td>
+                    <td>
+                        <select name="trangthai">
+                            <option value="1">Đã xử lý</option>
+                            <option value="2">Chưa xử lý</option>
+                        </select>
+                    </td>
+                    <td style="text-align: center;">
+                        <button class="status inProgress" type="button" onclick="window.location.href='../index/chitietdonhangtuadmin.html' "> Chi tiết</button>
+                    </td>
+                </tr>
+               
+            `;
+        }
+    </script>
+   
 </body>
 
 </html>

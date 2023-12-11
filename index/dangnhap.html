@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="styleTLWeb1.css">
     <link rel="stylesheet" href="dangnhap.css">
+    <script src="../index/function.js"></script>
 </head>
 
 <body onload="checkLogin1()">
@@ -49,7 +50,7 @@
                 </a>
             </div>
             <div class="logogiohang">
-                <a href="giohang.html" target="_blank">
+            <a href="../index/giohang.html" id="giohang" onclick="accessCart()">
                     <img src="logogiohang.png" alt="logo giỏ hàng"><br>
                     <span>GIỎ HÀNG</span>
                 </a>
@@ -113,7 +114,7 @@
             
 
             <div class="container">
-                <input type="text" placeholder="Tên tài khoản" name="uname" id="username" required>
+                <input type="text1" placeholder="Tên tài khoản" name="uname" id="username" required>
                 <br>
                 <input type="password" placeholder="Mật khẩu" name="psw" id="password" required>
                 <br>
@@ -124,59 +125,10 @@
             <div class="container" style="background-color:#f1f1f1">
                 <span >Quên mật khẩu?</a></span>
                 <p style="color:black;"> Đăng kí  <a href="dangki.html" style="color: orangered;">tại đây</a> </p>
-                <p style="color:black;"> Đăng nhập bằng tư cách quản trị viên <a href="admin.html" style="color: orangered;">tại đây</a> </p>
+                <!-- <p style="color:black;"> Đăng nhập bằng tư cách quản trị viên <a href="admin.html" style="color: orangered;">tại đây</a> </p> -->
             </div>
         </form>
     </div>
-    <script>
-        let listAccount = [
-            {
-                username : "admin",
-                password : "admin123"
-            },
-            {
-                username : "user",
-                password : "user123"
-            }
-        ]
-        let isLogin = !!localStorage.getItem("token");
-        //let isLogin = false;
-        //let isAdmin = !!localStorage.getItem("token1");
-        function checkLogin1(){
-            if(isLogin){
-                window.location.href = "taikhoan.html";
-            }
-        }
-        function Login(){
-            let username = document.getElementById("username").value;
-            let password = document.getElementById("password").value;
-            let checkLogin = true;
-            if(checkLogin){
-                // if(username === admin && password === adPass)
-                // {
-                //     localStorage.setItem("token1",username);
-                //     isAdmin=true;
-                //     checkLogin1();
-                //     alert("Đăng nhập thành công");
-                // }
-                // else{
-                //     localStorage.setItem("token",username);
-                //     isLogin = true;
-                //     checkLogin1();
-                //     alert("Đăng nhập thành công");
-                // }
-                localStorage.setItem("token","test");
-                isLogin = true;
-                checkLogin1();
-                alert("Đăng nhập thành công");
-            }else{
-                localStorage.clear();
-                alert("Tài khoản hoặc mật khẩu không đúng");
-            }
-        }
-
-    </script>
-
     <div class="khungden">
         <div class="cot">THÔNG TIN CHUNG<br>
             TQDA Sports là hệ thống cửa hàng cầu lông với<br> hơn 50 chi nhánh trên toàn quốc, cung cấp sỉ và<br> lẻ các

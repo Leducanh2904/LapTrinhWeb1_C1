@@ -122,11 +122,11 @@ a:link {
     margin: 0px;
 }
 a:link{
-    color: black;
+    color:black;
 }
 a:hover{
-    color: orange;
-    text-decoration: underline;
+    color: white;
+    text-decoration: none;
 }
 .menu-top {
     display: flex;
@@ -172,22 +172,27 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: orange;
+    color: white;
 }
-
+ul:hover{
+    cursor: pointer;
+}
 li {
     float: left;
 }
-
+.main-men, .dropdown, .nodrop{
+    margin-left: 60px;
+}
 .dropdown {
-
-    margin: 0px 100px;
+    text-align: center;
+    /* margin: 0px 100px; */
     /* Điều chỉnh khoảng cách giữa các mục dropdown  */
 }
 
 li a,
 .dropbtn {
     display: inline-block;
-    color: black;
+    color:black;
     text-align: left;
     padding: 7px 60px;
     text-decoration: none;
@@ -386,10 +391,11 @@ li.dropdown {
 }
 
 .textPop {
-    background-color: #04AA6D;
-    color: white;
+    background-color: orange;
+    color: black;
     font-size: 16px;
     padding: 16px 32px;
+    text-decoration: none;
 }
 
 .khungsanphammoi2 text {

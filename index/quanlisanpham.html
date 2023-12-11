@@ -125,33 +125,147 @@
                         </thead>
 
                         <tbody>
-                            <script>
-                                function toggleButtons() {
-                                    // Hiển thị hoặc ẩn nút thêm và nút xóa
-                                    var addButton = document.getElementById("addButton");
-                                    var deleteButton = document.getElementById("deleteButton");
-                        
-                                    if (addButton.style.display === "none") {
-                                        addButton.style.display = "inline";
-                                        deleteButton.style.display = "inline";
-                                    } else {
-                                        addButton.style.display = "none";
-                                        deleteButton.style.display = "none";
-                                    }
-                                }
-                            </script>
                             <tr>
                                 <td>Vợt Cầu Lông Yonex Astrox 100ZZ China Limited</td>
                                 <td>24/10/2023</td>
                                 <td>30/11/2023 19:59</td>
                                 <td>
-                                    <a style="text-decoration: none;" href="chinhsua.html"><button class="status inProgress" type="button" onclick="toggleButtons()"> Chỉnh sửa</button></a>
+                                    <button id="button1" class="status inProgress"> Chỉnh sửa</button>
+                                        <div id="myModal" class="modal" style="text-align: left; color: black; ">
+
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h2 style="text-align: center;">Chỉnh sửa sản phẩm</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="column">
+                                                        <p>Tên sản phẩm</p>
+                                                        <input class="tsp" type="text" name="" id="" value="Vợt Cầu Lông Yonex Astrox 100ZZ China Limited">
+                                                        <p>Mã sản phẩm</p>
+                                                        <input class="tsp" type="text" value="VNB017045">
+                                                        <p>Giá</p>
+                                                        <input class="tsp" type="text" value="9.700.000">
+                                                        <p>Phân loại</p>
+                                                        <select class="tsp" name="" id="">
+                                                            <option value="Yonex">Vợt cầu lông</option> 
+                                                            <option value="Lining">Giày cầu lông</option> 
+                                                            <option value="Lining">Quần áo cầu lông</option> 
+                                                            <option value="Victor">Balo cầu lông</option> 
+                                                            <option value="Apacs">Phụ kiện cầu lông</option> 
+                                                        </select>
+                                                        <p>Thương hiệu</p>
+                                                        <select class="tsp" name="" id="">
+                                                            <option value="Yonex">Yonex</option> 
+                                                            <option value="Lining">Lining</option> 
+                                                            <option value="Victor">Victor</option> 
+                                                            <option value="Apacs">Apacs</option> 
+                                                        </select>
+                                                        <p>Size</p>
+                                                        <select class="tsp" name="" id="">
+                                                            <option value="Yonex">2U</option> 
+                                                            <option value="Lining">3U</option> 
+                                                            <option value="Victor">4U</option> 
+                                                            <option value="Apacs">5U</option> 
+                                                        </select>
+                                                        <p>Tình trạng</p>
+                                                        <select name="" id="" class="tsp">
+                                                            <option value="">Còn hàng</option> 
+                                                            <option value="">Hết hàng</option> 
+                                                        </select>
+                                                        <br>
+                                                        
+                                                    </div>
+                                                    <div class="column" style="background-color: white">
+                                                        <p>Mô tả sản phẩm</p>
+                                                        <textarea rows="10" cols="58"  placeholder="Mô tả chi tiết sản phẩm: ">
+SET vợt cầu lông Yonex Astrox 100ZZ China Limited (Nội Địa Trung) là phiên bản giới hạn đáng mong đợi nhất trong năm 2023, đem đến một trải nghiệm cao cấp toàn diện cho người chơi. Sản phẩm này đã được sử dụng và ghi dấu ấn trong cộng đồng các vận động viên hàng đầu trên khắp thế giới, với tên tuổi nổi bật như tay vợt nam nổi tiếng Viktor Axelsen.
+                                                            
+Yonex Astrox 100ZZ China Limite sử dụng tông màu tối mạnh mẽ cũng các họa tiết vân lượn sóng mang dáng vóc của một cây vợt đẳng cấp hàng đầu thế giới hiện nay.
+                                                        </textarea> <br> <br>
+                                                        <p>Thêm hình ảnh</p>
+                                                        <input class="tsp" type="file" accept="image/*" id="themsanphamkhungcon2" onchange="displayImage(this)" required>
+                                                        <br>
+                                                        <img id="previewImage" src="../votcaulong/100zz01.png" alt="Hiển thị ảnh tại đây" style="max-width: 200px; max-height: 200px;">
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    function displayImage(input) {
+                                                      var file = input.files[0];
+                                                      if (file) {
+                                                        var reader = new FileReader();
+                                                        reader.onload = function(e) {
+                                                        document.getElementById('previewImage').src = e.target.result;
+                                                        };
+                                                        reader.readAsDataURL(file);
+                                                      }
+                                                    }
+                                                    </script>
+                                            </div>
+                                            <div class="modal-footer" style="text-align: center;">
+                                                <button class="saveBtn" type="button" onclick="alert('Lưu thành công')" >Lưu chỉnh sửa</button>
+                                            </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                     <button class="status1 inProgress" type="button" onclick="alert('Bạn chắc chắn muốn xóa sản phẩm này?')"><span>Xóa</span></button>
                                 </td>
-    
-
                             </tr>
+                            <script>
+                                // function toggleButtons() {
+                                //     // Hiển thị hoặc ẩn nút thêm và nút xóa
+                                //     var addButton = document.getElementById("addButton");
+                                //     var deleteButton = document.getElementById("deleteButton");
+                        
+                                //     if (addButton.style.display === "none") {
+                                //         addButton.style.display = "inline";
+                                //         deleteButton.style.display = "inline";
+                                //     } else {
+                                //         addButton.style.display = "none";
+                                //         deleteButton.style.display = "none";
+                                //     }
+                                // }
+                                 // Get the modal
+                                var modal = document.getElementById("myModal");
 
+                                // Get the button that opens the modal
+                                var btn = document.getElementById("button1");
+
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+
+                                // When the user clicks the button, open the modal 
+                                btn.onclick = function() {
+                                    modal.style.display = "block";
+                                }
+
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() {
+                                modal.style.display = "none";
+                                }
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
                             <tr>
                                 <td>Giày cầu lông Kawasaki 065 chính hãng</td>
                                 <td>24/10/2023</td>

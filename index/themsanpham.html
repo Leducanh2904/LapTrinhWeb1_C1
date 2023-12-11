@@ -28,18 +28,27 @@
     <div>
 		<div class="container" style="border: 5px solid orange; border-radius: 10px;margin-top: 80px; height: 545px;">
             <form onsubmit="alert('Thêm sản phẩm thành công')" >
-		<div class="themsanphamrow">
+		<div class="themsanphamrow" style="height: 487px;">
             <div class="themsanphamkhung1">
              
                 <div class="themsanphamtext1" style="margin-left: 90px;">THÊM SẢN PHẨM</div>
                 
                 <div style="margin-left: 200px;">
-                    
+                  <div style="margin-left: -405px; font-size: 90%;"><p style="margin-left: -17px;">Chọn loại sản phẩm</p>
+                    <select style="margin-left: 255px; width: 400px; height: 35px;"  name="loại" id="001">
+                      <option value="loại 1" >Vợt cầu lông</option>
+                      <option value="loại 2" >Giày cầu lông</option>
+                      <option value="loại 3" >Quần áo cầu lông</option>
+                      <option value="loại 4" >Balo, túi cầu lông</option>
+                      <option value="loại 5" >Phụ kiện cầu lông</option>
+                  </select></div>
+                  
                     <input type="themsanphamkhungcon" placeholder="Tên sản phẩm:" required>
                     <input type="themsanphamkhungcon" placeholder="Mã sản phẩm:" required>
                     <input type="themsanphamkhungcon" placeholder="Thương hiệu:" required>
                   <!-- Lồn Triều Chỉnh Cái Này -->
                   <!-- chỉnh thành select trong đó opt sẽ là vợt, balo, giày, balo,... -->
+                  
                     <input type="themsanphamkhungcon" placeholder="Giá:" required>
                     <input type="themsanphamkhungcon" placeholder="Giá niêm yết:" required>
                     <input type="themsanphamkhungcon" placeholder="Các loại size (vd: 2u-3u-4u-5u):" required>
@@ -49,14 +58,13 @@
                      
                     </div>
                     
-                    
-                    
                 </div>
             </div>
                 <div style="margin-left: 80px;">
                 <textarea rows="5" cols="60"  placeholder="Mô tả chi tiết sản phẩm: " style="margin-top: 78px; font-size: large;"></textarea>
                      <br> <br> <span style="font-family: 'Times New Roman', Times, serif; font-size: larger;">Thêm hình ảnh tại đây:</span>  <br> <br>
                     <input type="file" accept="image/*" id="themsanphamkhungcon2" onchange="displayImage(this)" required>
+                    
                     <img id="previewImage" src="#" alt="Hiển thị ảnh tại đây" style="max-width: 200px; max-height: 200px;">
                     <br>
                     

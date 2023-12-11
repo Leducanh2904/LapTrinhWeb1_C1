@@ -10,62 +10,40 @@
     <link rel="stylesheet" href="style.css">
     <script>
         function thongKe() {
-          
             var productName = document.getElementById('productName').value;
             var productType = document.getElementById('productType').value;
-            var timePeriod = document.getElementById('timePeriod').value;
-
-            
+            var startDate = document.getElementById('startDate').value;
+            var endDate = document.getElementById('endDate').value;
+    
             var resultDiv = document.getElementById('result');
+            var startDateTime = new Date(startDate);
+            var endDateTime = new Date(endDate);
+            // Kiểm tra xem đã chọn đủ ngày tháng chưa
+            if (startDate === '' || endDate === '') {
+                resultDiv.innerHTML = '<p>Vui lòng chọn cả "Từ ngày" và "Đến ngày".</p>';
+                return;
+            }
+            if (startDateTime > endDateTime) {
+             resultDiv.innerHTML = '<p>Ngày bắt đầu không thể sau ngày kết thúc.</p>';
+             return;
+            }
+    
             resultDiv.innerHTML = '<h2>Kết quả thống kê</h2> <br>' +
-                '<p>Tên sản phẩm: ' + productName + '</p> <br> ' +
+                '<p>Tên sản phẩm: ' + productName + '</p> <br>' + 
                 '<p>Loại sản phẩm: ' + productType + '</p> <br>' +
-                '<p>Khoảng thời gian: ' + timePeriod + '</p> <br>' +
-                '<p>Tổng số lượng bán ra: ' + tinhTongSoLuong() + '</p> <br>' +
+                '<p>Khoảng thời gian: ' + startDate + ' đến ' + endDate + '</p> <br>' +
+                '<p>Tổng số lượng bán ra: ' +'16' + '</p> <br>' +
                 '<h3>Đơn hàng</h3> <br>' +
-                hienThiDonHang();
-        }
-
-        function tinhTongSoLuong() {
-            // Đoạn code tính tổng số lượng từ đơn hàng
-            var ordersData = getOrdersData(); // Replace this with your actual data retrieval logic
-            var totalQuantity = 0;
-            for (var i = 0; i < ordersData.length; i++) {
-                totalQuantity += ordersData[i].quantity;
-            }
-            return totalQuantity;
-        }
-
-        function hienThiDonHang() {
-            // Đoạn code hiển thị thông tin đơn hàng
-            var ordersData = getOrdersData(); // Replace this with your actual data retrieval logic
-            var ordersHtml = '<ul>';
-            for (var i = 0; i < ordersData.length; i++) {
-                ordersHtml += '<li>';
-                ordersHtml += 'Đơn hàng #' + ordersData[i].id + ': ' +
-                    'Sản phẩm: ' + ordersData[i].productName +
-                    ', Số lượng: ' + ordersData[i].quantity +
-                    ', Ngày đặt hàng: ' + ordersData[i].orderDate;
-                ordersHtml += '</li>';
-                ordersHtml += '<br>';
-
-            }
-            ordersHtml += '</ul>';
-            return ordersHtml;
-        }
-
-        // Dummy function to simulate fetching orders data
-        function getOrdersData() {
-            return [
-                { id: 31231241, productName: 'Vợt cầu lông', quantity: 3, orderDate: '2023-01-02' }, 
-                { id: 81298988, productName: 'Balo cầu lông', quantity: 6, orderDate: '2023-03-03' },
-                { id: 32991987, productName: 'Phụ kiện', quantity: 7, orderDate: '2023-01-01' },
-                { id: 12172487, productName: 'Giày cầu lông', quantity: 9, orderDate: '2023-07-07' },
-
-                // Add more orders as needed
-            ];
-        }
+                '<ul>' +
+                '<li>Sản phẩm: Vợt cầu lông Yonex 100zz, Số lượng: 5, Ngày đặt hàng: 2023-12-13</li><br>' +
+                '<li>Sản phẩm: Vợt cầu lông Kawasaki 1000pz, Số lượng: 3, Ngày đặt hàng: 2023-12-14</li><br>' +
+                '<li>Sản phẩm: Vợt cầu lông Lining Turbo 9TD, Số lượng: 8, Ngày đặt hàng: 2023-12-15</li><br>' +
+                '</ul>' +
+                '<p>Tổng số đơn hàng: 16</p>';
+             }
     </script>
+    
+    
           <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -172,11 +150,10 @@
             <!-- ================ Order Details List ================= -->
             <div class="container1">
                 <h1>Thống kê kinh doanh</h1>
-            
-                <div>
-                  <label for="productName">Tên sản phẩm:</label>
-                  <input type="text" id="productName" placeholder="Nhập tên sản phẩm">
-                </div>
+                <div><label for="productName">Tên sản phẩm: </label>
+                    <input type="text" placeholder="Tên sản phẩm" id="productName"></div>
+                
+               
                 <div>
                   <label for="productType">Loại sản phẩm:</label>
                   <select id="productType">
@@ -192,8 +169,11 @@
                 </div> 
                 <div>
                     
-                  <label for="timePeriod">Khoảng thời gian:</label> <br>
-                  <input type="text" id="timePeriod" placeholder="VD: 29-04-2023,...">
+                    <label for="startDate">Từ ngày:</label>
+                    <input type="date" id="startDate" placeholder="Chọn ngày">
+                    
+                    <label for="endDate">Đến ngày:</label>
+                    <input type="date" id="endDate" placeholder="Chọn ngày">
                 </div>
             
                 <button onclick="thongKe()">Thống kê</button>
