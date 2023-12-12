@@ -108,9 +108,11 @@
             <li class="nodrop"><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
             <li class="nodrop"><a href="../lienhe/lienhe.html">Liên hệ</a></li>
 </ul><div class="khungtimkiem">
-    <form action="#" method="GET" id="advanced-search-form">
+    <form action="#" method="GET" id="advanced-search-form" >
+        <label for="timkiem">Tên sản phẩm</label>
+        <input type="text" placeholder="Nhập tên sản phẩm " style="width: 575px; margin-top: 8px;" required> <br>
         <label for="search">Chọn loại sản phẩm</label> 
-        <select id="chonsanpham" name="phanloai"  style="margin-top: 8px;"> 
+        <select id="chonsanpham" name="phanloai"  style="margin-top: 8px;" required> 
             <option value="allin">[None]</option>
             <option value="votcaulong">Tất cả</option>
             <option value="votcaulong">Vợt cầu lông</option>
@@ -123,7 +125,7 @@
 
         <br> <br>
         <label for="brand">Thương hiệu</label>
-        <select name="thuonghieu" id="chonthuonghieu"  style="margin-top: 8px;">
+        <select name="thuonghieu" id="chonthuonghieu"  style="margin-top: 8px;" required>
             <option value="yonex">[None]</option>
             <option value="yonex">Yonex</option>
             <option value="yonex">Lining</option>
